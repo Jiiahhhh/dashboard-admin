@@ -33,7 +33,8 @@
   <!-- Material Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
   <!-- CSS Files -->
-  <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.2.0" rel="stylesheet" />
+%{--  <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.2.0" rel="stylesheet" />--}%
+  <link rel="stylesheet" href="${resource(dir: 'css', file: 'css/material-dashboard.css')}">
 </head>
 
 <body class="bg-gray-200">
@@ -43,7 +44,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
           <div class="container-fluid ps-2 pe-0">
-            <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="../pages/dashboard.html">
+            <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="dashboard.gsp">
               Material Dashboard 3
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,19 +57,19 @@
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="../pages/dashboard.html">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="dashboard.gsp">
                     <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
                     Dashboard
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/profile.html">
+                  <a class="nav-link me-2" href="profile.gsp">
                     <i class="fa fa-user opacity-6 text-dark me-1"></i>
                     Profile
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/sign-up.html">
+                  <a class="nav-link me-2" href="sign-up.gsp">
                     <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
                     Sign Up
                   </a>
@@ -143,7 +144,7 @@
                   </div>
                   <p class="mt-4 text-sm text-center">
                     Don't have an account?
-                    <a href="../pages/sign-up.html" class="text-primary text-gradient font-weight-bold">Sign up</a>
+                    <a href="sign-up.gsp" class="text-primary text-gradient font-weight-bold">Sign up</a>
                   </p>
                 </form>
               </div>

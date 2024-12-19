@@ -33,7 +33,8 @@
   <!-- Material Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
   <!-- CSS Files -->
-  <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.2.0" rel="stylesheet" />
+%{--  <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.2.0" rel="stylesheet" />--}%
+  <link rel="stylesheet" href="${resource(dir: 'css', file: 'css/material-dashboard.css')}">
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -49,37 +50,37 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/dashboard.html">
+          <a class="nav-link text-dark" href="dashboard.gsp">
             <i class="material-symbols-rounded opacity-5">dashboard</i>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/tables.html">
+          <a class="nav-link text-dark" href="tables.gsp">
             <i class="material-symbols-rounded opacity-5">table_view</i>
             <span class="nav-link-text ms-1">Tables</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/billing.html">
+          <a class="nav-link text-dark" href="billing.gsp">
             <i class="material-symbols-rounded opacity-5">receipt_long</i>
             <span class="nav-link-text ms-1">Billing</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/virtual-reality.html">
+          <a class="nav-link text-dark" href="virtual-reality.gsp">
             <i class="material-symbols-rounded opacity-5">view_in_ar</i>
             <span class="nav-link-text ms-1">Virtual Reality</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/rtl.html">
+          <a class="nav-link text-dark" href="rtl.gsp">
             <i class="material-symbols-rounded opacity-5">format_textdirection_r_to_l</i>
             <span class="nav-link-text ms-1">RTL</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/notifications.html">
+          <a class="nav-link text-dark" href="notifications.gsp">
             <i class="material-symbols-rounded opacity-5">notifications</i>
             <span class="nav-link-text ms-1">Notifications</span>
           </a>
@@ -88,19 +89,19 @@
           <h6 class="ps-4 ms-2 text-uppercase text-xs text-dark font-weight-bolder opacity-5">Account pages</h6>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/profile.html">
+          <a class="nav-link text-dark" href="profile.gsp">
             <i class="material-symbols-rounded opacity-5">person</i>
             <span class="nav-link-text ms-1">Profile</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/sign-in.html">
+          <a class="nav-link text-dark" href="sign-in.gsp">
             <i class="material-symbols-rounded opacity-5">login</i>
             <span class="nav-link-text ms-1">Sign In</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="../pages/sign-up.html">
+          <a class="nav-link text-dark" href="sign-up.gsp">
             <i class="material-symbols-rounded opacity-5">assignment</i>
             <span class="nav-link-text ms-1">Sign Up</span>
           </a>
@@ -226,7 +227,7 @@
               </ul>
             </li>
             <li class="nav-item d-flex align-items-center">
-              <a href="../pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
+              <a href="sign-in.gsp" class="nav-link text-body font-weight-bold px-0">
                 <i class="material-symbols-rounded">account_circle</i>
               </a>
             </li>
